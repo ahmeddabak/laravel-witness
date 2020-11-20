@@ -1,26 +1,29 @@
 {
-    "name": "ahmeddabak/laravel-witness",
-    "description": "Another activity logger for laravel",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ahmed Dabak",
-            "email": "contact@ahmeddabak.me"
-        }
-    ],
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "Ahmeddabak\\LaravelWitness\\": "src/"
-        }
-    },
-    "autoload-dev" : {
-        "psr-4": {
-            "Ahmeddabak\\LaravelWitness\\Tests\\": "tests/"
-        }
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.4"
+  "name": "ahmeddabak/laravel-witness",
+  "description": "Another activity logger for laravel",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ahmed Dabak",
+      "email": "contact@ahmeddabak.me"
     }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Ahmeddabak\\LaravelWitness\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ahmeddabak\\LaravelWitness\\Tests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.4"
+  }
 }
