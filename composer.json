@@ -1,6 +1,6 @@
 {
   "name": "ahmeddabak/laravel-witness",
-  "description": "Another activity logger for laravel",
+  "description": "Another activity logger for laravel.",
   "type": "library",
   "license": "MIT",
   "authors": [
