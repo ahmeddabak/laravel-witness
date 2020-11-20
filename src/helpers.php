@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('witness')) {
+if (! function_exists('witness')) {
     function witness($event)
     {
         //TODO
