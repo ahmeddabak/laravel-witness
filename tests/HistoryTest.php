@@ -1,21 +1,21 @@
 <?php
 
 
-namespace Ahmeddabak\LaravelWitness\Tests;
+namespace Ahmeddabak\History\Tests;
 
-use Ahmeddabak\LaravelWitness\Models\History;
+use Ahmeddabak\History\Models\Witness;
 
 class HistoryTest extends TestCase
 {
     /** @test */
     public function it_persists_events_to_the_database()
     {
-        $history = new History();
+        $history = new Witness();
 
         $history->event = 'Test';
 
         $history->save();
 
-        $this->assertDatabaseCount('histories', 1);
+        $this->assertDatabaseCount('witnesses', 1);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ahmeddabak\LaravelWitness\Tests;
+namespace Ahmeddabak\History\Tests;
 
 class HelperTest extends TestCase
 {
@@ -15,7 +15,7 @@ class HelperTest extends TestCase
     {
         witness('user.created');
 
-        $this->assertDatabaseHas('histories', [
+        $this->assertDatabaseHas('witnesses', [
             'event' => 'user.created'
         ]);
     }

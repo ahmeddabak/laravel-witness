@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ahmeddabak\LaravelWitness\Tests;
+namespace Ahmeddabak\History\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as BaseTestCase;
@@ -12,8 +12,8 @@ class TestCase extends BaseTestCase
 
     protected function getEnvironmentSetUp($app)
     {
-        require_once __DIR__ . '/../database/migrations/create_histories_table.php';
+        require_once __DIR__ . '/../database/migrations/create_witnesses_table.php';
 
-        (new \CreateHistoriesTable)->up();
+        (new \CreateWitnessesTable)->up();
     }
 }

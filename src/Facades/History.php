@@ -1,15 +1,15 @@
 <?php
 
 
-namespace Ahmeddabak\LaravelWitness\Facades;
+namespace Ahmeddabak\History\Facades;
 
 
 use Illuminate\Support\Facades\Facade;
 
-class Witness extends Facade
+class History extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'witness';
+        return 'history';
     }
 }

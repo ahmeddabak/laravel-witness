@@ -1,12 +1,10 @@
 <?php
 
-
-namespace Ahmeddabak\LaravelWitness;
-
+namespace Ahmeddabak\History;
 
 use Illuminate\Support\ServiceProvider;
 
-class WitnessServiceProvider extends ServiceProvider
+class HistoryServiceProvider extends ServiceProvider
 {
     public function boot()
     {
@@ -26,8 +24,8 @@ class WitnessServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('witness', function () {
-            return new Witness();
+        $this->app->bind('history', function () {
+            return new History;
         });
     }
 }
