@@ -14,12 +14,11 @@ class HistoryServiceProvider extends ServiceProvider
 
 //        DB::enableQueryLog();
 
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
 //        $this->publishes([
 //            __DIR__ . '/../database/migrations/create_events_table.php' => database_path('migrations/'.date('Y_m_d_His').'_create_events_table.php'),
 //        ], 'migrations');
-
     }
 
     public function register()

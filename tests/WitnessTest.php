@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Ahmeddabak\History\Tests;
-
 
 use Ahmeddabak\History\History;
 
@@ -16,7 +14,7 @@ class WitnessTest extends TestCase
         (new History())->setEvent('Test')->setIp($ip);
 
         $this->assertDatabaseHas('Witnesses', [
-            'ip' => $ip
+            'ip' => $ip,
         ]);
     }
 
@@ -26,7 +24,7 @@ class WitnessTest extends TestCase
         (new History())->setEvent('Test');
 
         $this->assertDatabaseHas('Witnesses', [
-            'ip' => request()->ip()
+            'ip' => request()->ip(),
         ]);
     }
 }

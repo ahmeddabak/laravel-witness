@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Ahmeddabak\History\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -12,7 +11,7 @@ class TestCase extends BaseTestCase
 
     protected function getEnvironmentSetUp($app)
     {
-        require_once __DIR__ . '/../database/migrations/create_witnesses_table.php';
+        require_once __DIR__.'/../database/migrations/create_witnesses_table.php';
 
         (new \CreateWitnessesTable)->up();
     }

@@ -16,7 +16,7 @@ class HelperTest extends TestCase
         witness('user.created');
 
         $this->assertDatabaseHas('witnesses', [
-            'event' => 'user.created'
+            'event' => 'user.created',
         ]);
     }
 }
