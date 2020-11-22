@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Ahmeddabak\History;
 
 use Ahmeddabak\History\Models\Witness;
@@ -13,6 +12,7 @@ class History
     {
         $this->witness = new Witness;
     }
+
 //
 //    public function getHistory()
 //    {

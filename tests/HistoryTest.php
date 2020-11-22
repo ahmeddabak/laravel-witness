@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Ahmeddabak\History\Tests;
 
 use Ahmeddabak\History\Models\Witness;

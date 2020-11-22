@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Ahmeddabak\History\Facades;
-
 
 use Illuminate\Support\Facades\Facade;
 
